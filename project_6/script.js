@@ -1,0 +1,27 @@
+let flag=0;//1 to first slide load
+
+
+function controller(x){
+flag=flag +x;
+console.log(flag);
+slideShow(flag);
+}
+
+slideShow(flag);//1 to first slide load
+function slideShow(num){
+    let slides = document.getElementsByClassName('slide');
+    // console.log(slides);
+    if(num == slides.length){
+        flag=0;
+        num=0;
+    }
+    if(num < 0)
+    {
+        flag=slides.length-1;
+        num= slides.length-1;
+    }
+    for(let y of slides){
+        y.style.display="none";
+    }
+    slides[num].style.display="block";    
+}

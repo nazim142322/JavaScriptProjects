@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word counter</title>
+     <style>
+       .container{
+        /* border:1px solid green; */
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+       }
+       h2{
+        background-color: grey;
+        width:390px;
+        text-align:center;
+        color:white;
+        margin:0;
+        padding:0;
+       }
+       textarea{
+       
+       }
+       p{
+        background-color: grey;
+        padding: 5px 0;
+        color:white;
+        width:390px;
+        text-align:center;
+        
+       }
+     </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Word and character counter</h2>
+        <textarea name="" id="textbox" cols="50" rows="10"></textarea>
+        <p><span id="word">0</span> words and 
+            <span id="char">0</span> character 
+            <span id="space">0</span> spaces
+        </p>
+    </div>
+    <script>
+        let textbox =  document.getElementById("textbox");
+        textbox.addEventListener("input", function(){
+           var text =  this.value;
+         //   console.log(typeof text);
+           let char =  text.length;
+        //    console.log(char);
+           document.getElementById("char").innerHTML=char;  
+           
+           let space = text.split(" ");           
+          document.getElementById("space").innerHTML=space.length-1;
+        //   console.log(text.split(' ').length -1);
+
+                 
+           text=text.trim();
+           let words = text.split(" ");
+           let cleanlist =  words.filter(function(elm){//words array ka ek ek element elm me pass hoga
+            return elm!="";
+           });           
+        //    console.log(cleanlist);
+           document.getElementById("word").innerHTML=cleanlist.length;
+        });
+
+    </script>
+</body>
+</html>

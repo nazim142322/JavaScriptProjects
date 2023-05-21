@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <style>
+    
+        body{
+            background-color:#3498db;
+            display:grid;
+            place-items:center;
+            height:100vh;
+        }
+        .formContainer{
+            background-color: white;
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+            padding:30px 40px;
+            gap:10px;
+        }
+        form{
+            display:flex;
+            flex-direction:column;           
+            gap:10px;            
+        }
+        h2{
+            margin:0px 0px 10px 0px;
+        }
+        input {
+            width:250px;
+            padding:10px;
+            margin:10px 0;
+            font-size:15px;                    
+        }
+        input[type="submit"]{
+            width: 274px;
+            border:0px;
+            background-color:#3498db;
+            color:white; 
+               
+        }
+        .error{
+            /* border:1px solid green; */
+            margin:0;
+            color:red;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="formContainer">
+        <h2>Login</h2>
+          <form action="" onsubmit="return validateForm()"> <!--true par form submit and false par submit nahi -->
+            <input type="text" placeholder="User Name" id="userName">
+            <P id="userError" class="error"></P>
+            <input type="password" placeholder="Password" id="password">
+            <P id="passError" class="error"></P>
+            <input type="submit">
+         </form>
+    </div>
+    <script>
+        let username =  document.getElementById('userName');
+        let password =  document.getElementById("password");
+        let flag=1;
+        function validateForm(){
+            // return flase;
+            // return true;
+            if(username.value==""){
+                // console.log("username empty");
+                document.getElementById('userError').innerHTML="Username is required ";
+                flag=0;
+            }else if(username.value.length<3)
+            {
+                document.getElementById('userError').innerHTML="Username require min 3 char";
+                flag=0;
+            }
+            else{
+                document.getElementById('userError').innerHTML="";
+                flag=1;
+            }
+            if(password.value==""){
+                document.getElementById('passError').innerHTML="Password is required";
+                flag=0;
+            }
+            else{
+                document.getElementById('passError').innerHTML="";
+                flag=1;
+            }
+            // return false;
+            if(flag){
+                // console.log(flag);
+                return true;
+            }
+            else{ 
+                // console.log(flag);
+                return false;
+            }
+        // return false;
+        }
+    </script>
+</body>
+</html>

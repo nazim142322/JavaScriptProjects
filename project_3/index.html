@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>background changer</title>
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+            }
+            .container{
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                gap:20px;
+                padding:40px;
+            }
+            h1{
+                /* border:1px solid red; */
+                /* text-decoration:underline; */
+                border-bottom: 5px solid black;
+                padding:10px;
+               
+            }
+            img{
+                /* border:1px solid green; */
+                width:70%;
+            }
+            p{
+                text-align:justify;
+                font-size:18px;
+            }
+            .colorSwicher{               
+                padding:20px;
+                display:flex;
+                justify-content:end;
+                gap:10px;
+                padding:10 40px;                
+            }
+            .btn{
+                width:20px;
+                height:20px;
+                border:2px solid grey;
+                display:inline-block;
+                border-radius:50%;
+                cursor:pointer;               
+            }
+            #white{
+                background-color:white;
+            }
+            #aqua{
+                background-color:aqua;
+            }
+            #violet{
+                background-color:violet;
+            }
+            #black{
+                background-color:black;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div class="colorSwicher">
+            <span class="btn" id="white" onclick="changeBg('white')"></span>
+            <span class="btn" id="aqua" onclick="changeBg('aqua')"></span>
+            <span class="btn" id="violet" onclick="changeBg('violet')"></span>
+            <span class="btn" id="black" onclick="changeBg('black')"></span>
+        </div>
+        <div class="container">
+            <h1 class="text">About Us</h1>
+        <img src="about_us.png" alt="">
+        <p class="text">
+            commodi facilis? Eum fuga blanditiis magni impedit earum! Error temporibus maxime explicabo minus accusantium eius. Nisi sunt voluptatum doloremque impedit, saepe esse quos repellendus, vero exercitationem perspiciatis praesentium iste dolorem eos nostrum dolorum temporibus ratione aliquid magnam! Explicabo corporis dolore fugiat obcaecati harum at perferendis totam sapiente, itaque quam ipsum odio! Reiciendis, obcaecati commodi? Assumenda omnis aliquam officia soluta accusamus, architecto molestiae aperiam, quod possimus iste repellat atque sit corrupti voluptas! Libero optio, enim quibusdam explicabo repellendus velit. Quo necessitatibus deserunt, odio blanditiis sit cupiditate tempore consectetur velit suscipit, perferendis temporibus. Ipsam ratione illo illum autem rem error. Quam corrupti aperiam voluptate itaque at minus et, dignissimos pariatur ad facilis quos voluptatem dolor vitae dolorum velit tenetur molestias officia recusandae perferendis dolores amet expedita corporis! Doloremque dolorem deleniti, praesentium tenetur rem corporis beatae obcaecati eveniet sed qui recusandae quaerat nulla, soluta dignissimos unde magnam reiciendis quia! Asperiores laudantium ipsam tempore aliquid suscipit laborum accusamus, maiores reiciendis odio cupiditate officiis voluptatibus quisquam natus vero omnis rerum sit doloremque vel magnam magni consequuntur earum commodi aperiam? Accusamus aperiam id officiis ullam aut fugiat!
+            commodi facilis? Eum fuga blanditiis magni impedit earum! Error temporibus maxime explicabo minus accusantium eius. Nisi sunt voluptatum doloremque impedit, saepe esse quos repellendus, vero exercitationem perspiciatis praesentium iste dolorem eos nostrum dolorum temporibus ratione aliquid magnam! Explicabo corporis dolore fugiat obcaecati harum at perferendis totam sapiente, itaque quam ipsum odio! Reiciendis, obcaecati commodi? Assumenda omnis aliquam officia soluta accusamus, architecto molestiae aperiam, quod possimus iste repellat atque sit corrupti voluptas! Libero optio, enim quibusdam explicabo repellendus velit. Quo necessitatibus deserunt, odio blanditiis sit cupiditate tempore consectetur velit suscipit, perferendis temporibus. Ipsam ratione illo illum autem rem error. Quam corrupti aperiam voluptate itaque at minus et, dignissimos pariatur ad facilis quos voluptatem dolor vitae dolorum velit tenetur molestias officia recusandae perferendis dolores amet expedita corporis! Doloremque dolorem deleniti, praesentium tenetur rem corporis beatae obcaecati eveniet sed qui recusandae quaerat nulla, soluta dignissimos unde magnam reiciendis quia! Asperiores laudantium ipsam tempore aliquid suscipit laborum accusamus, maiores reiciendis odio cupiditate officiis voluptatibus quisquam natus vero omnis rerum sit doloremque vel magnam magni consequuntur earum commodi aperiam? Accusamus aperiam id officiis ullam aut fugiat!
+            commodi facilis? Eum fuga blanditiis magni impedit earum! Error temporibus maxime explicabo minus accusantium eius. Nisi sunt voluptatum doloremque impedit, saepe esse quos repellendus, vero exercitationem perspiciatis praesentium iste dolorem eos nostrum dolorum temporibus ratione aliquid magnam! Explicabo corporis dolore fugiat obcaecati harum at perferendis totam sapiente, itaque quam ipsum odio! Reiciendis, obcaecati commodi? Assumenda omnis aliquam officia soluta accusamus, architecto molestiae aperiam, quod possimus iste repellat atque sit corrupti voluptas! Libero optio, enim quibusdam explicabo repellendus velit. Quo necessitatibus deserunt, odio blanditiis sit cupiditate tempore consectetur velit suscipit, perferendis temporibus. Ipsam ratione illo illum autem rem error. Quam corrupti aperiam voluptate itaque at minus et, dignissimos pariatur ad facilis quos voluptatem dolor vitae dolorum velit tenetur molestias officia recusandae perferendis dolores amet expedita corporis! Doloremque dolorem deleniti, praesentium tenetur rem corporis beatae obcaecati eveniet sed qui recusandae quaerat nulla, soluta dignissimos unde magnam reiciendis quia! Asperiores laudantium ipsam tempore aliquid suscipit laborum accusamus, maiores reiciendis odio cupiditate officiis voluptatibus quisquam natus vero omnis rerum sit doloremque vel magnam magni consequuntur earum commodi aperiam? Accusamus aperiam id officiis ullam aut fugiat!
+        </p>   
+        </div>
+       
+    <script>
+        function changeBg(color){
+            document.body.style.backgroundColor=color;
+            let elm = document.getElementsByClassName('text');
+            if(color == "black"){         
+              
+                // for(i=0; i<elm.length; i++)
+                // {
+                //     elm[i].style.color = "white";
+                // }
+                for(let elm1 of elm)
+                {
+                    elm1.style.color="white";
+                }
+            }
+            else{
+                for(i=0; i<elm.length; i++)
+                {
+                    elm[i].style.color = "black";
+                }
+            }
+        }
+    </script>
+    </body>
+</html>
