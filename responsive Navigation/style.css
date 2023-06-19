@@ -26,14 +26,12 @@ header nav{
 header nav ul {
     /* display: flex;
     gap:15px; 
-    list-style:none; */
-    /* border:1px solid red; */
+    list-style:none; */   
 }
 header nav ul li {
    display:inline-block; 
    margin-left:15px;
-   list-style:none;
-   /* border:1px solid red; */
+   list-style:none;  
 } 
 header nav ul li a{
     text-decoration:none;
@@ -67,7 +65,7 @@ header nav ul li:last-child:hover{
 @media(max-width:1024px){
     .hamburger{
         display:flex;
-        cursor:pointer;
+        cursor:pointer;       
     }
     header nav ul {
         display:none;
@@ -83,7 +81,8 @@ header nav ul li:last-child:hover{
         top:100%;
         left:0;
         background-color:#30363f;
-        padding:20px;        
-    }
+        padding:20px;  
+       
+    }  
 }
 
